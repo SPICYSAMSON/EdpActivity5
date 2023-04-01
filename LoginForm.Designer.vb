@@ -38,7 +38,7 @@ Partial Class LoginForm
         Me.Admin.AutoSize = True
         Me.Admin.BackColor = System.Drawing.Color.Gainsboro
         Me.Admin.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Admin.Location = New System.Drawing.Point(535, 127)
+        Me.Admin.Location = New System.Drawing.Point(552, 127)
         Me.Admin.Name = "Admin"
         Me.Admin.Size = New System.Drawing.Size(60, 22)
         Me.Admin.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class LoginForm
         '
         'Admin_username
         '
-        Me.Admin_username.Location = New System.Drawing.Point(539, 152)
+        Me.Admin_username.Location = New System.Drawing.Point(556, 152)
         Me.Admin_username.Name = "Admin_username"
         Me.Admin_username.Size = New System.Drawing.Size(174, 20)
         Me.Admin_username.TabIndex = 1
@@ -56,7 +56,7 @@ Partial Class LoginForm
         Me.Password.AutoSize = True
         Me.Password.BackColor = System.Drawing.Color.LightGray
         Me.Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Password.Location = New System.Drawing.Point(535, 202)
+        Me.Password.Location = New System.Drawing.Point(552, 202)
         Me.Password.Name = "Password"
         Me.Password.Size = New System.Drawing.Size(89, 22)
         Me.Password.TabIndex = 2
@@ -64,24 +64,24 @@ Partial Class LoginForm
         '
         'Pass_word
         '
-        Me.Pass_word.Location = New System.Drawing.Point(539, 227)
+        Me.Pass_word.Location = New System.Drawing.Point(556, 227)
         Me.Pass_word.Name = "Pass_word"
         Me.Pass_word.Size = New System.Drawing.Size(174, 20)
         Me.Pass_word.TabIndex = 3
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(539, 280)
+        Me.OK.Location = New System.Drawing.Point(556, 280)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(73, 41)
         Me.OK.TabIndex = 4
-        Me.OK.Text = "GO"
+        Me.OK.Text = "OK"
         Me.OK.UseVisualStyleBackColor = True
         '
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(641, 280)
+        Me.Cancel.Location = New System.Drawing.Point(658, 280)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(72, 41)
         Me.Cancel.TabIndex = 5
