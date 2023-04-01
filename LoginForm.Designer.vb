@@ -75,7 +75,7 @@ Partial Class LoginForm
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(73, 41)
         Me.OK.TabIndex = 4
-        Me.OK.Text = "OK"
+        Me.OK.Text = "GO"
         Me.OK.UseVisualStyleBackColor = True
         '
         'Cancel
