@@ -23,9 +23,9 @@ Partial Class LoginForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Admin = New System.Windows.Forms.Label()
-        Me.Admin_username = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Password = New System.Windows.Forms.Label()
-        Me.Pass_word = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -44,12 +44,12 @@ Partial Class LoginForm
         Me.Admin.TabIndex = 0
         Me.Admin.Text = "Admin"
         '
-        'Admin_username
+        'txtUsername
         '
-        Me.Admin_username.Location = New System.Drawing.Point(556, 152)
-        Me.Admin_username.Name = "Admin_username"
-        Me.Admin_username.Size = New System.Drawing.Size(174, 20)
-        Me.Admin_username.TabIndex = 1
+        Me.txtUsername.Location = New System.Drawing.Point(556, 152)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(174, 20)
+        Me.txtUsername.TabIndex = 1
         '
         'Password
         '
@@ -62,12 +62,12 @@ Partial Class LoginForm
         Me.Password.TabIndex = 2
         Me.Password.Text = "Password"
         '
-        'Pass_word
+        'txtPassword
         '
-        Me.Pass_word.Location = New System.Drawing.Point(556, 227)
-        Me.Pass_word.Name = "Pass_word"
-        Me.Pass_word.Size = New System.Drawing.Size(174, 20)
-        Me.Pass_word.TabIndex = 3
+        Me.txtPassword.Location = New System.Drawing.Point(556, 227)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(174, 20)
+        Me.txtPassword.TabIndex = 3
         '
         'OK
         '
@@ -121,9 +121,9 @@ Partial Class LoginForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
-        Me.Controls.Add(Me.Pass_word)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Password)
-        Me.Controls.Add(Me.Admin_username)
+        Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Admin)
         Me.Name = "LoginForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -135,9 +135,9 @@ Partial Class LoginForm
     End Sub
 
     Friend WithEvents Admin As Label
-    Friend WithEvents Admin_username As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Password As Label
-    Friend WithEvents Pass_word As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents OK As Button
     Friend WithEvents Cancel As Button
     Friend WithEvents Label1 As Label

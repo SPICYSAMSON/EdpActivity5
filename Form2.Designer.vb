@@ -30,21 +30,21 @@ Partial Class Form2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pnlLogo = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ClientsPanel = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ProgramsPanel = New System.Windows.Forms.Label()
-        Me.TrainorsPanel = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.TransactionsPanel = New System.Windows.Forms.Label()
+        Me.TrainorsPanel = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ProgramsPanel = New System.Windows.Forms.Label()
+        Me.ClientsPanel = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlSideBar.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.ClientsPanel.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.TrainorsPanel.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.TrainorsPanel.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.ClientsPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlSideBar
@@ -153,54 +153,24 @@ Partial Class Form2
         Me.Panel2.TabIndex = 2
         Me.Panel2.Visible = False
         '
-        'Label1
+        'Panel4
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(26, 14)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(149, 32)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Dashboard"
+        Me.Panel4.BackColor = System.Drawing.Color.White
+        Me.Panel4.Controls.Add(Me.TransactionsPanel)
+        Me.Panel4.Location = New System.Drawing.Point(399, 299)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(284, 168)
+        Me.Panel4.TabIndex = 2
         '
-        'ClientsPanel
+        'TransactionsPanel
         '
-        Me.ClientsPanel.BackColor = System.Drawing.Color.White
-        Me.ClientsPanel.Controls.Add(Me.Label2)
-        Me.ClientsPanel.Location = New System.Drawing.Point(50, 79)
-        Me.ClientsPanel.Name = "ClientsPanel"
-        Me.ClientsPanel.Size = New System.Drawing.Size(382, 187)
-        Me.ClientsPanel.TabIndex = 1
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.ProgramsPanel)
-        Me.Panel1.Location = New System.Drawing.Point(50, 299)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(306, 168)
-        Me.Panel1.TabIndex = 2
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(18, 15)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 22)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Clients"
-        '
-        'ProgramsPanel
-        '
-        Me.ProgramsPanel.AutoSize = True
-        Me.ProgramsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProgramsPanel.Location = New System.Drawing.Point(17, 22)
-        Me.ProgramsPanel.Name = "ProgramsPanel"
-        Me.ProgramsPanel.Size = New System.Drawing.Size(87, 22)
-        Me.ProgramsPanel.TabIndex = 1
-        Me.ProgramsPanel.Text = "Programs"
+        Me.TransactionsPanel.AutoSize = True
+        Me.TransactionsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TransactionsPanel.Location = New System.Drawing.Point(18, 15)
+        Me.TransactionsPanel.Name = "TransactionsPanel"
+        Me.TransactionsPanel.Size = New System.Drawing.Size(172, 22)
+        Me.TransactionsPanel.TabIndex = 0
+        Me.TransactionsPanel.Text = "Transactions history"
         '
         'TrainorsPanel
         '
@@ -221,24 +191,54 @@ Partial Class Form2
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Trainors"
         '
-        'Panel4
+        'Panel1
         '
-        Me.Panel4.BackColor = System.Drawing.Color.White
-        Me.Panel4.Controls.Add(Me.TransactionsPanel)
-        Me.Panel4.Location = New System.Drawing.Point(399, 299)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(284, 168)
-        Me.Panel4.TabIndex = 2
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.ProgramsPanel)
+        Me.Panel1.Location = New System.Drawing.Point(50, 299)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(306, 168)
+        Me.Panel1.TabIndex = 2
         '
-        'TransactionsPanel
+        'ProgramsPanel
         '
-        Me.TransactionsPanel.AutoSize = True
-        Me.TransactionsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TransactionsPanel.Location = New System.Drawing.Point(18, 15)
-        Me.TransactionsPanel.Name = "TransactionsPanel"
-        Me.TransactionsPanel.Size = New System.Drawing.Size(172, 22)
-        Me.TransactionsPanel.TabIndex = 0
-        Me.TransactionsPanel.Text = "Transactions history"
+        Me.ProgramsPanel.AutoSize = True
+        Me.ProgramsPanel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProgramsPanel.Location = New System.Drawing.Point(17, 22)
+        Me.ProgramsPanel.Name = "ProgramsPanel"
+        Me.ProgramsPanel.Size = New System.Drawing.Size(87, 22)
+        Me.ProgramsPanel.TabIndex = 1
+        Me.ProgramsPanel.Text = "Programs"
+        '
+        'ClientsPanel
+        '
+        Me.ClientsPanel.BackColor = System.Drawing.Color.White
+        Me.ClientsPanel.Controls.Add(Me.Label2)
+        Me.ClientsPanel.Location = New System.Drawing.Point(50, 79)
+        Me.ClientsPanel.Name = "ClientsPanel"
+        Me.ClientsPanel.Size = New System.Drawing.Size(382, 187)
+        Me.ClientsPanel.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(18, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 22)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Clients"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(26, 14)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(149, 32)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Dashboard"
         '
         'Form2
         '
@@ -252,14 +252,14 @@ Partial Class Form2
         Me.pnlSideBar.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.ClientsPanel.ResumeLayout(False)
-        Me.ClientsPanel.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.TrainorsPanel.ResumeLayout(False)
-        Me.TrainorsPanel.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.TrainorsPanel.ResumeLayout(False)
+        Me.TrainorsPanel.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.ClientsPanel.ResumeLayout(False)
+        Me.ClientsPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
