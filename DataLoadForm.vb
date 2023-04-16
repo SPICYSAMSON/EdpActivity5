@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.Data.OleDb
 
-Public Class Form3
+Public Class DataLoadForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim openFileDialog1 As New OpenFileDialog()
 

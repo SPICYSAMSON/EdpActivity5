@@ -2,21 +2,14 @@
 Imports System.Text
 Imports MySql.Data.MySqlClient
 Public Class LoginForm
-    Dim conn As MySqlConnection
-    Dim COMMAND As MySqlCommand
-    Private Sub Admin_username_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
-
-    End Sub
-    Private Sub Pass_word_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
-
-    End Sub
-
     Private Sub OK_Click(sender As Object, e As EventArgs) Handles OK.Click
-        conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.0.1;userid=root;password='HAKDUGERZ69';database=lions_den_mma"
-
+        Dim conn As MySqlConnection = Nothing
         Try
-            conn.Open()
+            conn = myconn
+            If conn.State <> ConnectionState.Open Then
+                Connect_to_DB()
+            End If
+
             Dim query As String = "SELECT * FROM login WHERE username = @username AND password = @password"
             Dim command As New MySqlCommand(query, conn)
             command.Parameters.AddWithValue("@username", txtUsername.Text)
@@ -33,10 +26,14 @@ Public Class LoginForm
             End If
 
             reader.Close()
-            conn.Close()
+
         Catch ex As Exception
             MsgBox(ex.Message)
-            conn.Close()
+
+        Finally
+            If conn IsNot Nothing AndAlso conn.State = ConnectionState.Open Then
+                Disconnect_to_DB()
+            End If
         End Try
     End Sub
 

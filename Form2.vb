@@ -1,8 +1,8 @@
 ﻿Public Class Form2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Panel2.Visible = True
-        Dim form3 As New Form3()
-        form3.Show()
+        Dim formCRUD As New FormCRUD()
+        formCRUD.Show()
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load

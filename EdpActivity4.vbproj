@@ -115,10 +115,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="DataLoadForm.Designer.vb">
+      <DependentUpon>DataLoadForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="DataLoadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD.Designer.vb">
+      <DependentUpon>FormCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.vb">
@@ -134,6 +140,7 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -152,8 +159,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="DataLoadForm.resx">
+      <DependentUpon>DataLoadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD.resx">
+      <DependentUpon>FormCRUD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
