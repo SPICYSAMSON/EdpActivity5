@@ -198,9 +198,9 @@ Partial Class FormCRUD
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(82, 314)
+        Me.DataGridView1.Location = New System.Drawing.Point(73, 312)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(518, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(538, 170)
         Me.DataGridView1.TabIndex = 18
         '
         'FormCRUD
