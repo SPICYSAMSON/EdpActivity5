@@ -72,5 +72,9 @@ Public Class DataLoadForm
             MessageBox.Show("Error: " & ex.Message, "Save to Database", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub exportButton_Click(sender As Object, e As EventArgs) Handles exportButton.Click
+        ExportToExcel(DataGridView1)
+    End Sub
 End Class
 

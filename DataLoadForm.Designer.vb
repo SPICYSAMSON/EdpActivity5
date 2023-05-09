@@ -25,6 +25,7 @@ Partial Class DataLoadForm
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.saveButton = New System.Windows.Forms.Button()
+        Me.exportButton = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -47,18 +48,28 @@ Partial Class DataLoadForm
         '
         'saveButton
         '
-        Me.saveButton.Location = New System.Drawing.Point(669, 381)
+        Me.saveButton.Location = New System.Drawing.Point(669, 384)
         Me.saveButton.Name = "saveButton"
         Me.saveButton.Size = New System.Drawing.Size(101, 33)
         Me.saveButton.TabIndex = 2
         Me.saveButton.Text = "Save Data"
         Me.saveButton.UseVisualStyleBackColor = True
         '
+        'exportButton
+        '
+        Me.exportButton.Location = New System.Drawing.Point(562, 384)
+        Me.exportButton.Name = "exportButton"
+        Me.exportButton.Size = New System.Drawing.Size(101, 33)
+        Me.exportButton.TabIndex = 3
+        Me.exportButton.Text = "Export Data"
+        Me.exportButton.UseVisualStyleBackColor = True
+        '
         'DataLoadForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.exportButton)
         Me.Controls.Add(Me.saveButton)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
@@ -72,4 +83,5 @@ Partial Class DataLoadForm
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents saveButton As Button
+    Friend WithEvents exportButton As Button
 End Class
